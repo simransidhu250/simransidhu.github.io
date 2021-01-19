@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard-Coded-Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script src="./js/quiz.js"></script>
+    <h1 class="heading">Hard-coded Quiz</h1>
+    <form name="questions" id="questions">
+    <div class="divide1">
+        <div class="number">1.</div>
+        <div>
+            <div><p>What would be the output of this code?</p>
+            <span class="reserve">let</span><span>  height = 0;</span><br>
+            <span class="reserve">alert</span><span>(height&nbsp;</span><span class="operator">||&nbsp;</span><span>100);</span><br>
+            <span class="reserve">alert</span><span>(height&nbsp;</span><span class="operator">??&nbsp;</span><span>100);</span><br><br>
+            </div>
+            <input type="radio" name="question1" value="true,0">
+            <label for="option-1">a) true,0</label><br>
+            <input type="radio" name="question1" value="true,100">
+            <label for="option-2">b) true,100</label><br>
+            <input type="radio" name="question1" value="100,0">
+            <label for="option-3">c) 100,0</label><br>
+            <input type="radio" name="question1" value="true,100">
+            <label for="option-4">d) true,100</label><br>
+            <div id="result1"></div>
+         </div>
+        </div><hr>
+    <div class="divide2">
+        <div class="number">2.</div>
+        <div>
+            <div><br><span>In a<span class="operator"> ??</span> b</span>, nullish coalescing operator gives <span class="operator">b</span> as result if <span class="operator">a </span>: is
+            </div>
+            <input type="radio" name="question2" value="true">
+            <label for="option-1">a) true</label><br>
+            <input type="radio" name="question2" value="null or undefined">
+            <label for="option-2">b) null or undefined</label><br>
+            <input type="radio" name="question2" value="defined">
+            <label for="option-3">c) defined</label><br>
+            <input type="radio" name="question2" value="none of these">
+            <label for="option-4">d) none of these</label><br>
+            <div id="result2"></div>
+        </div>
+    </div><hr>
+    <div class="divide1">
+        <div class="number">3.</div>
+        <div>
+            <p>The <span class="operator">||</span> operator returns false for the undefined/null variable</p>
+            <input type="radio" name="question3" value="true">
+            <label for="option-1">a) true</label><br>
+            <input type="radio" name="question3" value="fasle">
+            <label for="option-2">b) false</label><br>
+            <div id="result3"></div>
+        </div>
+    </div><hr>
+    <div class="divide2">
+        <div class="number">4.</div>
+        <div>
+            <div><p>What would be the output of this code? <br>
+                <span class="reserve">let</span><span> x = 1 <span class="operator">&&</span> 2 <span class="operator">??</span>  3; </span><br>
+            </p>
+            </div>
+            <input type="radio" name="question4" value="1">
+            <label for="option-1">a) 1</label><br>
+            <input type="radio" name="question4" value="false">
+            <label for="option-2">b) false</label><br>
+            <input type="radio" name="question4" value="3">
+            <label for="option-3">c) 3</label><br>
+            <input type="radio" name="question4" value="Syntax error">
+            <label for="option-4">d) Syntax error</label><br>
+            <div id="result4"></div>
+        </div>
+    </div><hr>
+    <div class="divide1">
+        <div class="number">5.</div>
+        <div>
+            <div><br> i) The <span class="operator">||</span> operator returns the first truthy valuesi <br> i) The <span class="operator"> ?? </span> operator returns the first defined value <br> Are these statements true?</div>
+            <input type="radio" name="question5" value="true">
+            <label for="option-1">a) true</label><br>
+            <input type="radio" name="question5" value="fasle">
+            <label for="option-2">b) false</label><br>
+            <div id="result5"></div>
+        </div>
+    </div><hr>
+    <div class="divide2">
+        <div class="number">6.</div>
+        <div>
+            <p>What would be the output of this code?</p>
+            <div><span class="reserve">let</span><span> double = n </span ><span class="operator">=> </span><span>n * 2;</span><br>
+            <span class="reserve">alert</span><span>(double(3));</span><br><br>
+            </div>
+            <input type="radio" name="question6" value="3">
+            <label for="option-1">a) 3</label><br>
+            <input type="radio" name="question6" value="6">
+            <label for="option-2">b) 6</label><br>
+            <input type="radio" name="question6" value="0">
+            <label for="option-3">c) 0</label><br>
+            <input type="radio" name="question6" value="9">
+            <label for="option-4">d) 9</label><br>
+            <div id="result6"></div>
+        </div>
+    </div><hr>
+     <input type="button" formaction="submit" onclick="checkResults()" value="Submit" class="button">
+    </form>
+</body>
+</html>
